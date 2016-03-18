@@ -35,7 +35,6 @@ class WorkoutsController < ApplicationController
 		params.require(:workout).permit(:date, :workout, :mood, :length)
 	end
 
-
   def find_workout
 		@workout = Workout.find(params[:id])
 	end
